@@ -1,0 +1,42 @@
+.form__container {
+    text-align: center;
+    gap: 50px;
+    width: 600px;
+    margin-inline: auto;
+    padding-block: 50px;
+}
+
+.form__container * {
+    font-family: Urbanist;
+}
+
+.form__title {
+
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 60px;
+    gap: 30px;
+}
+
+.form__links {
+    text-align: start;
+}
+
+.form__links a {
+    margin-right: 30px;
+}
+
+.form__button {
+    background: var(--azul-petroleo) !important;
+    width: 145px;
+    align-self: center;
+}
+
+.form__checkbox {
+    align-self: flex-start;
+}
