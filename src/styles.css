@@ -1,4 +1,47 @@
-/* You can add global styles to this file, and also import other style files */
+/* Estilos globales */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(180deg, #89373D 0%, #89373D 30%, #142433 100%) center;
+}
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* Estilo para los íconos generales */
+nav i {
+  font-size: 24px;
+  color: white;
+}
+
+/* Estilo para el contenedor de los íconos del lado izquierdo */
+nav .user-menu {
+  display: flex;
+  align-items: center;
+}
+
+nav .user-menu2 {
+  display: flex;
+  align-items: center;
+}
+
+/* Margen entre los íconos del lado izquierdo */
+nav .user-menu i {
+  margin-left: 950px; /* Ajuste para separar los íconos */
+  cursor: pointer;
+  position: absolute;
+}
+
+nav .user-menu2 i {
+  margin-left: 450px;
+  cursor: pointer;
+  position: absolute;
+}
+
+nav .user-menu-bell i {
+  cursor: pointer;
+  margin-right: 250px;
+}
+
+/* Estilos para el contenido */
+.main-content {
+  padding: 120px 20px; /* Ajuste para evitar que el contenido se superponga al nav */
+  color: white;
+}
