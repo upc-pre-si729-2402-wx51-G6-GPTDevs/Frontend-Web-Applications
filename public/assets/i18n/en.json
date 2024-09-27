@@ -1,1 +1,23 @@
-{}
+{
+  "TITLE": "Language Switcher",
+  "PROFILE": "Profile",
+  "PROFILE_PLACEHOLDER": "Enter your profile",
+  "NAME": "Name",
+  "NAME_PLACEHOLDER": "Enter your name",
+  "JOB_TITLE": "Job Title",
+  "JOB_TITLE_PLACEHOLDER": "Enter your job title",
+  "LOCATION": "Location",
+  "LOCATION_PLACEHOLDER": "Enter your location",
+  "AVAILABILITY": "Availability",
+  "AVAILABILITY_PLACEHOLDER": "Enter your availability",
+  "CHANGE_PROFILE": "Change Profile",
+  "BIOGRAPHY": "Biography",
+  "BIOGRAPHY_PLACEHOLDER": "Enter your biography",
+  "SCORE": "Score",
+  "SCORE_PLACEHOLDER": "Enter your score",
+  "UPLOAD_FILES": "Upload Files",
+  "WORK_DONE": "Work Done",
+  "WORK_DONE_PLACEHOLDER": "Enter the work done",
+  "CARDS": "Cards",
+  "CARDS_PLACEHOLDER": "Enter the cards"
+}
