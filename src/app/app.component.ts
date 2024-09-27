@@ -1,19 +1,16 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { TranslateService } from '@ngx-translate/core';
+import { NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, NgOptimizedImage],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css'], // Asegura de que sea 'styleUrls' en lugar de 'styleUrl'
 })
 export class AppComponent {
   title = 'TaskLinker';
-
-  constructor(private translateService: TranslateService) {
-    this.translateService.setDefaultLang('en');
-    this.translateService.use('en');
-  }
+  dropdownVisible = false; // Inicializa dropdownVisible
+  private language: string | undefined;
 }
