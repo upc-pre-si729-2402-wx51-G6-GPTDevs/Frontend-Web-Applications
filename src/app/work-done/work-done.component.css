@@ -1,0 +1,214 @@
+/* Estilos generales para el contenedor */
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 70px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-50px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+  transform: translateY(-60px);
+}
+
+/* Estilos para el título */
+.header h2 {
+  font-size: 35px;
+  font-weight: bold;
+  margin-left: 5px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Estilos para la tarjeta (card) */
+.card {
+  border: 1px solid #ccc;
+  padding: 40px;
+  border-radius: 10px;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.card-content p {
+  margin: 10px 0;
+  color: #000;
+  font-size: 18px;
+}
+
+.card-content a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.card-content a:hover {
+  text-decoration: underline;
+}
+
+/* Botón de detalles */
+.details-button {
+  background-color: #142433;
+  color: white;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 150px;
+}
+
+.details-button:hover {
+  background-color: #BD2F28;
+}
+
+/* Modal - Ajustes generales */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Estilos internos del modal */
+.modal-content {
+  background-color: #fefefe;
+  margin: 8% auto;
+  padding: 40px; /* Aumenta el padding para más espacio */
+  border: 1px solid #ccc;
+  width: 70%;
+  border-radius: 10px;
+  color: #333;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Añade sombra */
+}
+
+.modal-content h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #142433;
+}
+
+.modal-content p {
+  font-size: 18px;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.performance-review {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f9f9f9; /* Fondo claro */
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.performance-review h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #142433;
+}
+
+.review-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.employer-info {
+  width: 75%; /* Asegura suficiente espacio para el texto */
+}
+
+.rating {
+  width: 20%;
+  text-align: right;
+}
+
+.rating p {
+  margin: 0;
+  font-size: 22px;
+}
+
+.close-button {
+  background-color: #142433;
+  color: white;
+  border: none;
+  padding: 8px 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 380px;
+}
+
+.close-button:hover {
+  background-color: #BD2F28;
+}
+
+/* Ajustes adicionales para centrar el contenido */
+.modal-content h2,
+.modal-content p {
+  text-align: left;
+}
+
+.performance-review .review-content {
+  align-items: flex-start;
+}
+
+.performance-review p {
+  margin: 0;
+}
+
+/* Estilos para el botón Historial de Trabajos */
+.historial-button {
+  background-color: #142433;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px; /* Lo esquinamos a la derecha */
+  top: 10px;  /* Ajuste para que esté al lado del título */
+}
+
+.historial-button:hover {
+  background-color: #BD2F28;
+}
+
+/* Estilos para el contenedor del historial */
+.historial-content {
+  display: none;
+  position: fixed;
+  top: 100px;
+  width: 300px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Historial que aparece a la derecha */
+.historial-content.right {
+  right: 10px;
+}
+
+/* Historial que aparece a la izquierda */
+.historial-content.left {
+  left: 10px;
+}
+
+/* Muestra el historial cuando está activo */
+.historial-content.active {
+  display: block;
+}
+
