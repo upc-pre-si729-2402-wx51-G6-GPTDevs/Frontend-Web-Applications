@@ -1,1 +1,23 @@
-{}
+{
+  "TITLE": "Selector de Idioma",
+  "PROFILE": "Perfil",
+  "PROFILE_PLACEHOLDER": "Ingrese su perfil",
+  "NAME": "Nombre",
+  "NAME_PLACEHOLDER": "Ingrese su nombre",
+  "JOB_TITLE": "Título Laboral",
+  "JOB_TITLE_PLACEHOLDER": "Ingrese su título laboral",
+  "LOCATION": "Ubicación",
+  "LOCATION_PLACEHOLDER": "Ingrese su ubicación",
+  "AVAILABILITY": "Disponibilidad",
+  "AVAILABILITY_PLACEHOLDER": "Ingrese su disponibilidad",
+  "CHANGE_PROFILE": "Cambiar Perfil",
+  "BIOGRAPHY": "Biografía",
+  "BIOGRAPHY_PLACEHOLDER": "Ingrese su biografía",
+  "SCORE": "Puntuación",
+  "SCORE_PLACEHOLDER": "Ingrese su puntuación",
+  "UPLOAD_FILES": "Subir Archivos",
+  "WORK_DONE": "Trabajo Realizado",
+  "WORK_DONE_PLACEHOLDER": "Ingrese el trabajo realizado",
+  "CARDS": "Tarjetas",
+  "CARDS_PLACEHOLDER": "Ingrese las tarjetas"
+}

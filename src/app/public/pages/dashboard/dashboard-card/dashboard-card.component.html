@@ -1,0 +1,71 @@
+<div class="cards-container">
+  <!-- Tarjeta del Perfil -->
+  <div class="card profile-card">
+    <div class="photo-container">
+      <img [src]="dashboard?.photo" alt="Foto de perfil" class="profile-photo" />
+    </div>
+    <div class="info-field">
+      <p>{{dashboard?.name}}</p>
+    </div>
+    <div class="info-field">
+      <p>{{dashboard?.jobTitle}}</p>
+    </div>
+    <div class="info-field">
+      <p>{{dashboard?.location}}</p>
+    </div>
+    <div class="info-field">
+      <label>Puntuación:</label>
+      <p>{{dashboard?.rate}}⭐</p>
+    </div>
+    <div class="settings">
+      <span class="material-icons">settings</span>
+      <span>Configuración de Perfil</span>
+    </div>
+  </div>
+
+
+
+  <div class="card tasks-card">
+    <div class="header">
+      <p class="task-info">Ahora puedes buscar oportunidades laborales al igual que dar a otros. Solo elige la opción correcta.</p>
+      <button class="publish-task-button">Publicar Tarea</button>
+    </div>
+    <div class="visualization">
+      <p class="visualization-title">Visualización de Tareas</p>
+    </div>
+    <hr />
+    <div class="task-preview">
+      <p>Medio Tiempo en:</p>
+
+      <div class="task-box">
+        <div class="task-content">
+          <div class="task-description">
+            <p>Buscamos personal calificado de... <a href="#">ver más</a></p>
+            <p>Cobro por comisiones S/.30.</p>
+          </div>
+          <button class="apply-button">Aplicar</button>
+        </div>
+      </div>
+
+      <div class="task-box">
+        <div class="task-content">
+          <div class="task-description">
+            <p>Buscamos personal calificado de... <a href="#">ver más</a></p>
+            <p>Cobro por comisiones S/.10.</p>
+          </div>
+          <button class="apply-button">Aplicar</button>
+        </div>
+      </div>
+
+      <div class="task-box">
+        <div class="task-content">
+          <div class="task-description">
+            <p>Buscamos personal calificado de... <a href="#">ver más</a></p>
+            <p>Cobro por comisiones S/.20.</p>
+          </div>
+          <button class="apply-button">Aplicar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
