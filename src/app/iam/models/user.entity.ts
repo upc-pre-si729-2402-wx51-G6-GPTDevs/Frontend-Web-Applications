@@ -7,7 +7,7 @@
 } */
 
 type UserType = {
-    id: number;
+    id?: number;
     name: string;
     email: string;
     phone: number;
@@ -15,7 +15,7 @@ type UserType = {
 }
 
 export class User {
-    id: number;
+    id?: number;
     name: string;
     email: string;
     phone: number;
