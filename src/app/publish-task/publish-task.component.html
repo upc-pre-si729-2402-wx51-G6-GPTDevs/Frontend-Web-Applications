@@ -1,0 +1,48 @@
+<div class="task-form-container">
+  <button class="back-btn">
+    <span class="material-icons" style="color: #000; position: absolute; margin-top: 97px; margin-left: 175px; font-size: 30px;">arrow_back</span>
+  </button>
+  <h2>Publicar Tarea</h2>
+
+  <div class="form-group">
+    <label for="title">Título:</label>
+    <input type="text" id="title" class="wide-input" style=" margin-top: -4px; margin-right: 300px; width: 530px;">
+  </div>
+
+  <div class="form-group">
+    <label for="description">Descripción:</label>
+    <textarea id="description" style="margin-right: 230px; width: 600px;"></textarea>
+    <small class="small-text">0/200</small>
+  </div>
+
+  <div class="form-group">
+    <label for="contract-type">Tipo de contrato:</label>
+    <input type="text" id="contract-type" class="medium-input" style="margin-right: 160px;">
+
+    <label for="location" style="margin-left: -90px; margin-top: 10px;">Ubicación:</label>
+    <input type="text" id="location" class="medium-input">
+  </div>
+
+  <div class="form-group">
+    <label for="category">Categoría:</label>
+    <input type="text" id="category" class="medium-input" style="margin-right: 190px; width: 180px; margin-top: -4px;">
+
+    <label for="payment" style="margin-left: -40px;">Pago:</label>
+    <input type="number" id="payment" class="short-input" placeholder="S/" style=" margin-right: 83px; margin-top: -4px;">
+  </div>
+
+  <div class="form-group">
+    <label for="date">Fecha:</label>
+    <input type="date" id="date" class="short-input" style="margin-right: 570px; margin-top: -4px;">
+  </div>
+
+  <div class="form-group" id="file-upload" (click)="fileInput.click()">
+    <span class="material-icons">attach_file</span>
+    <span>Subir archivos</span>
+    <input type="file" #fileInput (change)="onFileUpload($event)" style="display: none;" multiple>
+  </div>
+
+  <button class="publish-btn" (click)="onSubmit()">Publicar</button>
+
+  <div *ngIf="successMessage" class="success-message">{{ successMessage }}</div>
+</div>
