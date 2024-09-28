@@ -1,0 +1,24 @@
+.mat-toolbar-row {
+    background: linear-gradient(to left, var(---azul-oscuro) 0%, var(--azul-petroleo) 50%, var(---azul-oscuro) 100%);
+    display: flex;
+    margin-bottom: 80px;
+    align-items: center;
+    padding-bottom: 10px;
+    justify-content: space-between;
+    padding-inline: 80px;
+}
+
+.mat-toolbar-row img {
+    height: 60px;
+    margin-top: 10px;
+}
+
+.mat-toolbar-row span {
+    color: #fff;
+    font-size: 20px;
+    font-family: Urbanist;
+}
+
+.mat-toolbar-row span:hover {
+    cursor: pointer;
+}
