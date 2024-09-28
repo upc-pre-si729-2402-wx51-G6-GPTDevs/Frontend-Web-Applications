@@ -1,4 +1,4 @@
 export const environment = {
   production: false,
-  serverBasePath: 'http://localhost:3000/workers'
+  serverBasePath: 'https://tasklinker-fake-api.vercel.app/workers'
 };

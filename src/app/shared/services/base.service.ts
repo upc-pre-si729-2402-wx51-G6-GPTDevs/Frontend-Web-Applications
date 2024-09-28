@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class BaseService {
-  protected baseUrl = 'http://localhost:3000';
+  protected baseUrl = 'https://tasklinker-fake-api.vercel.app';
 
-  constructor(protected http: HttpClient) {}
+  constructor(protected http: HttpClient) { }
 }

@@ -7,7 +7,7 @@ import { User } from '../models/user.entity';
 })
 export class AuthApiService {
   http = inject(HttpClient);
-  apiUrl = "http://localhost:3000/api/v1/users"
+  apiUrl = "https://tasklinker-fake-api.vercel.app/users"
 
   constructor() { }
 
