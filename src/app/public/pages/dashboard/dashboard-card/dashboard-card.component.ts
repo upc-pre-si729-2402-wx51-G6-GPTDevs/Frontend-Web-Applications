@@ -1,19 +1,20 @@
-import {Component, OnInit} from '@angular/core';
-import { Dashboard} from "../../../../tasklinker/model/dashboard";
-import { DashboardService} from "../../../../tasklinker/services/dashboard.service";
+import { Component, OnInit } from '@angular/core';
+import { Dashboard } from "../../../../tasklinker/model/dashboard";
+import { DashboardService } from "../../../../tasklinker/services/dashboard.service";
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-dashboard-card',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './dashboard-card.component.html',
   styleUrl: './dashboard-card.component.css'
 })
-export class DashboardCardComponent implements OnInit{
-  dashboards:Dashboard[]=[];
-  dashboard?:Dashboard;
+export class DashboardCardComponent implements OnInit {
+  dashboards: Dashboard[] = [];
+  dashboard?: Dashboard;
 
-  constructor(private dashboardService:DashboardService) {}
+  constructor(private dashboardService: DashboardService) { }
 
   ngOnInit(): void {
     this.dashboardService.getDashboard().subscribe({
