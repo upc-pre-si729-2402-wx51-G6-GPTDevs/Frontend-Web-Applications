@@ -5,6 +5,7 @@ import { DashboardCardComponent } from "./public/pages/dashboard/dashboard-card/
 import { LoginComponent } from './iam/components/login/login.component';
 import { RegisterComponent } from './iam/components/register/register.component';
 import { WorkDoneComponent } from './work-done/work-done.component';
+import { PublishTaskComponent } from './publish-task/publish-task.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -14,4 +15,5 @@ export const routes: Routes = [
   { path: 'profile-employer', component: BodyCardEmployerComponent, title: 'Perfil del Empleador' },
   { path: 'home', component: DashboardCardComponent, title: 'Panel de Control' },
   { path: 'work-history', component: WorkDoneComponent },
+  { path: 'task', component: PublishTaskComponent },
 ];
