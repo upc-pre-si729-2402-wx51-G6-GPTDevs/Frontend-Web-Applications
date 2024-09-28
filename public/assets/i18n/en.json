@@ -1,6 +1,8 @@
 {
   "TITLE": "Language Switcher",
   "PROFILE": "Profile",
+  "PROFILE_1": "Worker profile",
+  "PROFILE_2": "Employer profile",
   "PROFILE_PLACEHOLDER": "Enter your profile",
   "NAME": "Name",
   "NAME_PLACEHOLDER": "Enter your name",
@@ -19,5 +21,9 @@
   "WORK_DONE": "Work Done",
   "WORK_DONE_PLACEHOLDER": "Enter the work done",
   "CARDS": "Cards",
-  "CARDS_PLACEHOLDER": "Enter the cards"
+  "CARDS_PLACEHOLDER": "Enter the cards",
+  "WORKS_HISTORY": "Vie work history",
+  "SETTINGS": "Settings",
+  "PUBLISH_TASK": "Publish Task",
+  "APPLY": "Apply"
 }

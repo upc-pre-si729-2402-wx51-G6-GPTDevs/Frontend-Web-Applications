@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { Dashboard } from "../../../../tasklinker/model/dashboard";
 import { DashboardService } from "../../../../tasklinker/services/dashboard.service";
 import { RouterLink } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-dashboard-card',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink, TranslateModule],
   templateUrl: './dashboard-card.component.html',
   styleUrl: './dashboard-card.component.css'
 })

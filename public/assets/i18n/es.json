@@ -1,6 +1,8 @@
 {
   "TITLE": "Selector de Idioma",
   "PROFILE": "Perfil",
+  "PROFILE_1": "Perfil de trabajador",
+  "PROFILE_2": "Perfil de empleador",
   "PROFILE_PLACEHOLDER": "Ingrese su perfil",
   "NAME": "Nombre",
   "NAME_PLACEHOLDER": "Ingrese su nombre",
@@ -19,5 +21,9 @@
   "WORK_DONE": "Trabajo Realizado",
   "WORK_DONE_PLACEHOLDER": "Ingrese el trabajo realizado",
   "CARDS": "Tarjetas",
-  "CARDS_PLACEHOLDER": "Ingrese las tarjetas"
+  "CARDS_PLACEHOLDER": "Ingrese las tarjetas",
+  "WORKS_HISTORY": "Ver historial de trabajos",
+  "SETTINGS": "Configuración",
+  "PUBLISH_TASK": "Publicar Tarea",
+  "APPLY": "Aplicar"
 }

@@ -1,7 +1,7 @@
 <div class="giant-card">
   <div class="info-container">
 
-    <p class="bold-text">Perfil del trabajador</p>
+    <p class="bold-text">{{'PROFILE_1' | translate}}</p>
 
     <div class="photo-container">
       <img [src]="worker?.photo" alt="Foto de perfil" class="profile-photo" />
@@ -13,19 +13,19 @@
     </div>
 
     <div class="info-field">
-      <label for="name">Nombre:</label>
+      <label for="name">{{'NAME' | translate}}:</label>
       <span id="name">{{ worker?.name }}</span>
     </div>
     <div class="info-field">
-      <label for="jobTitle">Título Laboral:</label>
+      <label for="jobTitle">{{'JOB_TITLE' | translate}}:</label>
       <span id="jobTitle">{{ worker?.jobTitle }}</span>
     </div>
     <div class="info-field">
-      <label for="location">Ubicación:</label>
+      <label for="location">{{'LOCATION' | translate}}:</label>
       <span id="location">{{ worker?.location }}</span>
     </div>
     <div class="info-field">
-      <label for="availability">Disponibilidad:</label>
+      <label for="availability">{{'AVAILABILITY' | translate}}:</label>
       <span id="availability">{{ worker?.availability }}</span>
     </div>
   </div>
@@ -34,20 +34,20 @@
 
   <div class="details-container">
     <div class="bio-box">
-      <p class="bold-text">Biografía</p>
+      <p class="bold-text">{{'BIOGRAPHY' | translate}}</p>
       <p>{{ worker?.bio }}</p>
     </div>
 
     <div class="rating-box">
-      <p class="bold-text">Puntuación</p>
+      <p class="bold-text">{{'SCORE' | translate}}</p>
       <div class="stars">★★★★★</div>
     </div>
 
     <div class="button-container">
-      <button>Subir Archivos</button>
-      <button routerLink="/work-history">Trabajos Realizados</button>
-      <button>Tarjeta</button>
-      <button routerLink="/profile-employer">Cambiar perfil</button>
+      <button>{{'UPLOAD_FILES' | translate}}</button>
+      <button routerLink="/work-history">{{'WORK_DONE' | translate}}</button>
+      <button>{{'CARDS' | translate}}</button>
+      <button routerLink="/profile-employer">{{'CHANGE_PROFILE' | translate}}</button>
     </div>
   </div>
 </div>
