@@ -1,10 +1,11 @@
 import { NgIf } from '@angular/common';
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-publish-task',
   templateUrl: './publish-task.component.html',
-  imports: [NgIf],
+  imports: [NgIf, RouterLink],
   standalone: true,
   styleUrls: ['./publish-task.component.scss']
 })
