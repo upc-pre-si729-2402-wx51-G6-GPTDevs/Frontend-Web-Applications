@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -14,6 +15,12 @@ export class ToolbarComponent {
 
   constructor(private translateService: TranslateService) {
     this.currentLang = this.translateService.currentLang;
+  }
+
+  router = inject(Router);
+
+  home() {
+    this.router.navigate(['/home']);
   }
 
   useLanguage() {
