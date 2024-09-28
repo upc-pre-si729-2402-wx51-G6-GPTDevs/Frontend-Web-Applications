@@ -5,9 +5,9 @@ import { TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet],  // importa el RouterOutlet 
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']  // Cambiamos a styleUrls (plural)
 })
 export class AppComponent {
   title = 'TaskLinker';
