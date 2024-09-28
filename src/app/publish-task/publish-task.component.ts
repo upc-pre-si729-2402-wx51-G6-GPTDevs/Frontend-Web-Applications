@@ -1,8 +1,10 @@
+import { NgIf } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-publish-task',
   templateUrl: './publish-task.component.html',
+  imports: [NgIf],
   standalone: true,
   styleUrls: ['./publish-task.component.scss']
 })
