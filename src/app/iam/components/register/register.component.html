@@ -1,0 +1,37 @@
+<mat-card class="form__container">
+    <mat-card-title class="form__title">Welcome to TaskLinker</mat-card-title>
+
+    <form class="form" (submit)="onSubmit()">
+        <div class="form__links">
+            <a routerLink="/login">Login</a>
+            <b><a routerLink="/register">Register</a></b>
+            <mat-divider />
+        </div>
+
+        <mat-form-field>
+            <mat-label>Name</mat-label>
+            <input matInput type="text" name="name" [(ngModel)]="name">
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input matInput type="text" name="email" [(ngModel)]="email">
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Phone number</mat-label>
+            <input matInput type="text" name="phone" [(ngModel)]="phoneNumber">
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Password</mat-label>
+            <input matInput type="password" name="password" [(ngModel)]="password">
+        </mat-form-field>
+
+        <mat-checkbox class="form__checkbox">
+            Accept the <span>Terms and Conditions</span> and <span>Privacy Policy</span>
+        </mat-checkbox>
+
+        <button mat-flat-button type="submit" class="form__button">Register</button>
+    </form>
+</mat-card>

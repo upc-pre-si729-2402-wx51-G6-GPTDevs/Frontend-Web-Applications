@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Jose",
+      "email": "example@mail.com",
+      "phone": "987654321",
+      "password": "123"
+    }
+  ],
+  "workers": [
+    {
+      "id": 1,
+      "photo": "https://img.freepik.com/fotos-premium/apuesto-joven-disenador-desarrollador-web-hombre-negocios-sonriente-oficina-computadora_929531-128.jpg",
+      "name": "Juan Pérez",
+      "jobTitle": "Desarrollador Frontend",
+      "location": "Lima, Perú",
+      "availability": "Full-time",
+      "bio": "Desarrollador web con 5 años de experiencia en la creación de aplicaciones web. He trabajado con tecnologías como JavaScript, TypeScript y frameworks como Angular y React. Me enfoco en desarrollar soluciones efectivas que mejoren la experiencia del usuario y optimicen procesos."
+    }
+  ],
+  "employers": [
+    {
+      "id": 1,
+      "photo": "https://www.shutterstock.com/image-photo/young-hispanic-man-wearing-blue-600nw-2214648345.jpg",
+      "name": "Pedro Alejandro",
+      "location": "Tingo Maria, Perú",
+      "bio": "Tengo 25 años y estoy en búsqueda de personas que posean un nivel de conocimiento sobresaliente en programación, especificamente en el ámbito del desarrollo de sitios web o aplicaciones móviles, se otorgará un horario flexible dependiendo de sus necesidades, ofrecemos un ambiente laboral agradable y muy unido."
+    }
+  ],
+  "dashboard": [
+    {
+      "photo": "https://png.pngtree.com/png-vector/20231207/ourlarge/pngtree-portrait-of-a-smiling-young-man-png-image_11079467.png",
+      "name": "Josue Castro",
+      "jobTitle": "Ingeniero de sistemas",
+      "location": "Piura",
+      "rate": 4.5
+    }
+  ]
+}
