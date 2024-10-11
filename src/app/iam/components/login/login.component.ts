@@ -9,6 +9,8 @@ import { Router, RouterLink } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { AuthApiService } from '../../services/auth-api.service';
 import { User } from '../../models/user.entity';
+import { SnackbarComponent } from '../../../public/components/snackbar/snackbar.component';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-login',
@@ -23,6 +25,7 @@ export class LoginComponent {
 
   authApi = inject(AuthApiService);
   router = inject(Router);
+  snackBar = inject(MatSnackBar);
 
   onSubmit() {
     this.authApi.login(this.email, this.password).subscribe(
@@ -31,11 +34,24 @@ export class LoginComponent {
 
 
         if (data.length) {
-          alert('Login successful.');
+          this.snackBar.openFromComponent(SnackbarComponent, {
+            data: {
+              message: 'Login successful.',
+              icon: 'close'
+            }
+          });
+          //alert('Login successful.');
+
           this.router.navigate(['/home']);
         }
         else
-          alert('Login failed. User does not exist or incorrect password.');
+          this.snackBar.openFromComponent(SnackbarComponent, {
+            data: {
+              message: 'Login failed. User does not exist or incorrect password.',
+              icon: 'close'
+            }
+          });
+        //alert('Login failed. User does not exist or incorrect password.');
       }
     );
   }
