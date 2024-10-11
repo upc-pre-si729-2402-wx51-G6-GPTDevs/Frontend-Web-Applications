@@ -1,27 +1,56 @@
-# TaskLinker
+# Proyecto TaskLinker
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.4.
+## Descripción
 
-## Development server
+Este proyecto es una plataforma web que facilita la conexión entre personas que buscan trabajos temporales y aquellos que necesitan contratar servicios. La aplicación cuenta con tres páginas funcionales:
+- **Perfil de Trabajador**
+- **Perfil de Empleador**
+- **Visualización de Panel de Control**
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Además, permite cambiar entre los perfiles de usuario (trabajador y empleador) y acceder al panel de control mediante botones en la interfaz.
 
-## Code scaffolding
+---
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Requisitos previos
 
-## Build
+- Node.js 
+- Angular CLI 
+- Json Server
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Instalación
 
-## Running unit tests
+Sigue los siguientes pasos para instalar y ejecutar la aplicación en tu entorno local.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Ejecutar `npm install` 
 
-## Running end-to-end tests
+Posteriormente instalar JsonServer para el FakeAPI 
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+`npm install -g json-server` 
 
-## Further help
+Alzar el json server mediante este comando
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+`json-server --watch server/db.json` 
+
+Este se iniciará en el siguiente Link: http://localhost:3000
+
+Finalmente para poner en funcionamiento el sitio web, ejecutar:
+
+`ng serve`
+
+# Funcionalidades:
+
+### 1. Perfil de Trabajador
+   Esta página muestra los detalles del perfil del trabajador, como su foto, nombre, oficio, ubicación y puntuación. 
+
+### 2. Perfil de Empleador
+   En esta página, se visualiza la información del perfil del empleador, similar al perfil de trabajador, con opciones de personalización.
+
+### 3. Panel de Control
+   Desde el Panel de Control, se puede visualizar las tareas disponibles para el trabajador, crear nuevas tareas, y gestionar el estado de las tareas.
+
+### 4. Boton "Cambiar Usuario"
+  Este botón alterna entre los tipos de usuarios, para ver sus datos personales y registro
+
+### 5. Boton "Ver panel de control"
+  Mediante este botón, podremos ver detalles de un trabajador y las acciones previamente realizadas 
+

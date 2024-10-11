@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="header">
+    <h2>Trabajos realizados</h2>
+  </div>
+
+  <div class="card">
+    <div class="card-content">
+      <p><strong>Contrato:</strong> Electricista</p>
+      <p>Descripción: Trabajo por tiempo... <a href="#">ver más.</a></p> <br> <br>
+      <p>Cobra por comisiones s/.</p>
+    </div>
+    <button class="details-button" (click)="openModal()">Ver detalles</button>
+
+  </div>
+</div>
+
+<!-- Modal para mostrar detalles del trabajo -->
+<div id="detailsModal" class="modal">
+  <div class="modal-content">
+    <h2>Electricista</h2>
+    <p><strong>Descripción:</strong> Se busca Electricista para realizar conexiones en edificio ubicado en Surco. Disponibilidad del 07/09 al 10/09 desde 10:00 AM hasta las 2:00 PM.</p>
+    <p><strong>Pago:</strong> S/30/h</p>
+
+    <div class="performance-review">
+      <h3>Evaluación del Desempeño</h3>
+      <div class="review-content">
+        <div class="employer-info">
+          <p><strong>Roberto</strong> (Employer)</p>
+          <p>Realizó el trabajo correctamente y a tiempo, excepto el último día que llegó 1 hora tarde. Buen muchacho, espero que le vaya bien :)</p>
+        </div>
+        <div class="rating">
+          <p><strong>Puntaje</strong></p>
+          <p>⭐⭐⭐⭐</p>
+        </div>
+      </div>
+    </div>
+    <button class="close-button" (click)="closeModal()">Cerrar</button>
+  </div>
+</div>
+
