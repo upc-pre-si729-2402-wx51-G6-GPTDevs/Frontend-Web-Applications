@@ -67,11 +67,20 @@ body {
 .settings {
   display: flex;
   font-size: 32px;
-  padding-left: 200px;
+  padding-left: 225px;
   align-items: center;
   margin-top: 100px;
   color: black;
 }
+.settings1 {
+  display: flex;
+  font-size: 32px;
+  padding-left: 225px;
+  align-items: center;
+  margin-top: 20px;
+  color: black;
+}
+
 
 .settings .material-icons {
   margin-right: 5px;

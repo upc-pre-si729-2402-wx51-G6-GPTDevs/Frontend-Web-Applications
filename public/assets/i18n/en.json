@@ -19,11 +19,13 @@
   "SCORE_PLACEHOLDER": "Enter your score",
   "UPLOAD_FILES": "Upload Files",
   "WORK_DONE": "Work Done",
+  "ADD_USER": "Add Worker",
   "WORK_DONE_PLACEHOLDER": "Enter the work done",
   "CARDS": "Cards",
   "CARDS_PLACEHOLDER": "Enter the cards",
   "WORKS_HISTORY": "Vie work history",
-  "SETTINGS": "Settings",
+  "SETTINGS1": "View Workers",
+  "SETTINGS2": "View Employers",
   "PUBLISH_TASK": "Publish Task",
   "APPLY": "Apply"
 }

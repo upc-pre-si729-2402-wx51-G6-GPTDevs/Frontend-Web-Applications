@@ -19,11 +19,13 @@
   "SCORE_PLACEHOLDER": "Ingrese su puntuación",
   "UPLOAD_FILES": "Subir Archivos",
   "WORK_DONE": "Trabajo Realizado",
+  "ADD_USER": "Agregar Trabajador",
   "WORK_DONE_PLACEHOLDER": "Ingrese el trabajo realizado",
   "CARDS": "Tarjetas",
   "CARDS_PLACEHOLDER": "Ingrese las tarjetas",
   "WORKS_HISTORY": "Ver historial de trabajos",
-  "SETTINGS": "Configuración",
+  "SETTINGS1": "Ver Trabajadores",
+  "SETTINGS2": "Ver Empleadores",
   "PUBLISH_TASK": "Publicar Tarea",
   "APPLY": "Aplicar"
 }
