@@ -11,12 +11,23 @@
   "workers": [
     {
       "id": 1,
-      "photo": "https://img.freepik.com/fotos-premium/apuesto-joven-disenador-desarrollador-web-hombre-negocios-sonriente-oficina-computadora_929531-128.jpg",
-      "name": "Juan Pérez",
-      "jobTitle": "Desarrollador Frontend",
-      "location": "Lima, Perú",
-      "availability": "Full-time",
-      "bio": "Desarrollador web con 5 años de experiencia en la creación de aplicaciones web. He trabajado con tecnologías como JavaScript, TypeScript y frameworks como Angular y React. Me enfoco en desarrollar soluciones efectivas que mejoren la experiencia del usuario y optimicen procesos."
+      "firstname": "Juan",
+      "lastname": "Pérez",
+      "emailAddress": "juan.perez@example.com",
+      "street": "Calle Falsa",
+      "numberStreet": "123",
+      "district": "Centro",
+      "postalCode": "12345",
+      "city": "Lima",
+      "country": "Perú",
+      "area": "Desarrollo de Software",
+      "experienceWorking": 5,
+      "countryCode": "+51",
+      "number": "987654321",
+      "value": 4.2,
+      "skillName": "JavaScript",
+      "descriptionSkill": "Experto en desarrollo de aplicaciones web con JavaScript y frameworks modernos.",
+      "photoUrl": "https://t4.ftcdn.net/jpg/04/85/09/47/360_F_485094704_XTwE3psMhKbWaop5i71wu4rr1SJjLRaB.jpg"
     }
   ],
   "employers": [

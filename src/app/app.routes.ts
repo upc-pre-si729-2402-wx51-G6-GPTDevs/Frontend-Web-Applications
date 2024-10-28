@@ -6,6 +6,9 @@ import { LoginComponent } from './iam/components/login/login.component';
 import { RegisterComponent } from './iam/components/register/register.component';
 import { WorkDoneComponent } from './work-done/work-done.component';
 import { PublishTaskComponent } from './publish-task/publish-task.component';
+import {WorkerManagementComponent} from "./public/components/worker-management/worker-management.component";
+import {AddWorkerComponent} from "./public/components/add-worker/add-worker.component";
+
 
 export const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -16,4 +19,6 @@ export const routes: Routes = [
   { path: 'home', component: DashboardCardComponent, title: 'Panel de Control' },
   { path: 'work-history', component: WorkDoneComponent },
   { path: 'task', component: PublishTaskComponent },
+  { path: 'crud', component: WorkerManagementComponent, title: 'Gestión de Trabajadores'},
+  { path: 'add-worker', component: AddWorkerComponent, title: 'Agregar trabajador'}
 ];

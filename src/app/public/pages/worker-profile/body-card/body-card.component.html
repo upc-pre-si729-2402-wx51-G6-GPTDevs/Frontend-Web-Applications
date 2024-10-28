@@ -4,7 +4,7 @@
     <p class="bold-text">{{'PROFILE_1' | translate}}</p>
 
     <div class="photo-container">
-      <img [src]="worker?.photo" alt="Foto de perfil" class="profile-photo" />
+      <img [src]="worker?.photoUrl" alt="Foto de perfil" class="profile-photo" />
     </div>
 
     <div class="info-field">
@@ -13,46 +13,98 @@
     </div>
 
     <div class="info-field">
-      <label for="name">{{'NAME' | translate}}:</label>
-      <span id="name">{{ worker?.name }}</span>
+      <label for="firstname">{{'FIRST_NAME' | translate}}:</label>
+      <span id="firstname">{{ worker?.firstname }}</span>
     </div>
+
     <div class="info-field">
-      <label for="jobTitle">{{'JOB_TITLE' | translate}}:</label>
-      <span id="jobTitle">{{ worker?.jobTitle }}</span>
+      <label for="lastname">{{'LAST_NAME' | translate}}:</label>
+      <span id="lastname">{{ worker?.lastname }}</span>
     </div>
+
     <div class="info-field">
-      <label for="location">{{'LOCATION' | translate}}:</label>
-      <span id="location">{{ worker?.location }}</span>
+      <label for="emailAddress">{{'EMAIL' | translate}}:</label>
+      <span id="emailAddress">{{ worker?.emailAddress }}</span>
     </div>
+
     <div class="info-field">
-      <label for="availability">{{'AVAILABILITY' | translate}}:</label>
-      <span id="availability">{{ worker?.availability }}</span>
+      <label for="street">{{'STREET' | translate}}:</label>
+      <span id="street">{{ worker?.street }}</span>
     </div>
+
+    <div class="info-field">
+      <label for="numberStreet">{{'NUMBER_STREET' | translate}}:</label>
+      <span id="numberStreet">{{ worker?.numberStreet }}</span>
+    </div>
+
+    <div class="info-field">
+      <label for="district">{{'DISTRICT' | translate}}:</label>
+      <span id="district">{{ worker?.district }}</span>
+    </div>
+
+    <div class="info-field">
+      <label for="postalCode">{{'POSTAL_CODE' | translate}}:</label>
+      <span id="postalCode">{{ worker?.postalCode }}</span>
+    </div>
+
+    <div class="info-field">
+      <label for="city">{{'CITY' | translate}}:</label>
+      <span id="city">{{ worker?.city }}</span>
+    </div>
+
+    <div class="info-field">
+      <label for="country">{{'COUNTRY' | translate}}:</label>
+      <span id="country">{{ worker?.country }}</span>
+    </div>
+
+    <div class="info-field">
+      <label for="area">{{'AREA' | translate}}:</label>
+      <span id="area">{{ worker?.area }}</span>
+    </div>
+
+    <div class="info-field">
+      <label for="experienceWorking">{{'EXPERIENCE' | translate}}:</label>
+      <span id="experienceWorking">{{ worker?.experienceWorking }} years</span>
+    </div>
+
+    <div class="info-field">
+      <label for="countryCode">{{'COUNTRY_CODE' | translate}}:</label>
+      <span id="countryCode">{{ worker?.countryCode }}</span>
+    </div>
+
+    <div class="info-field">
+      <label for="number">{{'NUMBER' | translate}}:</label>
+      <span id="number">{{ worker?.number }}</span>
+    </div>
+
+    <div class="info-field">
+      <label for="value">{{'VALUE' | translate}}:</label>
+      <span id="value">{{ worker?.value }}⭐</span>
+    </div>
+
+    <div class="info-field">
+      <label for="skillName">{{'SKILL_NAME' | translate}}:</label>
+      <span id="skillName">{{ worker?.skillName }}</span>
+    </div>
+
+    <div class="info-field">
+      <label for="descriptionSkill">{{'DESCRIPTION_SKILL' | translate}}:</label>
+      <span id="descriptionSkill">{{ worker?.descriptionSkill }}</span>
+    </div>
+
   </div>
 
   <div class="divider"></div>
 
   <div class="details-container">
 
-
-    <div class="bio-box">
-      <p class="bold-text">{{'BIOGRAPHY' | translate}}</p>
-      <p>{{ worker?.bio }}</p>
-    </div>
-
-    <div class="rating-box">
-      <p class="bold-text">{{'SCORE' | translate}}</p>
-      <div class="stars">★★★★★</div>
-    </div>
-
     <div class="button-container">
       <button>{{'UPLOAD_FILES' | translate}}</button>
       <button routerLink="/work-history">{{'WORK_DONE' | translate}}</button>
       <button>{{'CARDS' | translate}}</button>
       <button routerLink="/profile-employer">{{'CHANGE_PROFILE' | translate}}</button>
+      <button routerLink="/crud">{{'MORE' | translate}}</button>
 
     </div>
   </div>
 </div>
-
-
