@@ -1,13 +1,13 @@
 import { Routes } from '@angular/router';
-import { BodyCardComponent } from "./public/pages/worker-profile/body-card/body-card.component";
-import { BodyCardEmployerComponent } from "./public/pages/employer-profile/body-card-employer/body-card-employer.component";
-import { DashboardCardComponent } from "./public/pages/dashboard/dashboard-card/dashboard-card.component";
+import {BodyCardComponent} from "./profiles/pages/worker-profile/body-card/body-card.component";
 import { LoginComponent } from './iam/components/login/login.component';
 import { RegisterComponent } from './iam/components/register/register.component';
 import { WorkDoneComponent } from './work-done/work-done.component';
 import { PublishTaskComponent } from './publish-task/publish-task.component';
-import {WorkerManagementComponent} from "./public/components/worker-management/worker-management.component";
-import {AddWorkerComponent} from "./public/components/add-worker/add-worker.component";
+import {WorkerManagementComponent} from "./profiles/components/worker-management/worker-management.component";
+import {AddWorkerComponent} from "./profiles/components/add-worker/add-worker.component";
+import {BodyCardEmployerComponent} from "./profiles/pages/employer-profile/body-card-employer/body-card-employer.component";
+import {DashboardCardComponent} from "./profiles/pages/dashboard/dashboard-card/dashboard-card.component";
 
 
 export const routes: Routes = [

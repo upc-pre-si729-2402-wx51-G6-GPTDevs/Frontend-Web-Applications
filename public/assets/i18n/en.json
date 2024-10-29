@@ -46,5 +46,7 @@
   "DESCRIPTION_SKILL": "Skill Description",
   "PHOTO_URL": "Photo URL",
   "MORE": "Worker Management",
-  "ADD_WORKER": "Add Worker"
+  "ADD_WORKER": "Add Worker",
+  "NEXT_WORKER": "Next Worker",
+  "PREVIOUS_WORKER": "Previous Worker"
 }

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Add Worker</title>
+</head>
+<body>
+<div class="form-container">
+  <h1>{{ 'ADD_WORKER' | translate }}</h1>
+  <form [formGroup]="workerForm" (ngSubmit)="onSubmit()">
+  <div class="form-row">
+      <div class="form-group">
+        <label for="firstname">{{'FIRST_NAME' | translate }}</label>
+        <input type="text" id="firstname" formControlName="firstname" required>
+      </div>
+      <div class="form-group">
+        <label for="lastname">{{'LAST_NAME' | translate }}</label>
+        <input type="text" id="lastname" formControlName="lastname" required>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="emailAddress">{{'EMAIL' | translate }}</label>
+        <input type="email" id="emailAddress" formControlName="emailAddress" required>
+      </div>
+      <div class="form-group">
+        <label for="number">{{'NUMBER' | translate }}</label>
+        <input type="text" id="number" formControlName="number" required>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="street">{{'STREET' | translate }}</label>
+        <input type="text" id="street" formControlName="street" required>
+      </div>
+      <div class="form-group">
+        <label for="numberStreet">{{'NUMBER_STREET' | translate }}</label>
+        <input type="text" id="numberStreet" formControlName="numberStreet" required>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="district">{{'DISTRICT' | translate }}</label>
+        <input type="text" id="district" formControlName="district" required>
+      </div>
+      <div class="form-group">
+        <label for="postalCode">{{'POSTAL_CODE' | translate }}</label>
+        <input type="text" id="postalCode" formControlName="postalCode" required>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="city">{{'CITY' | translate }}</label>
+        <input type="text" id="city" formControlName="city" required>
+      </div>
+      <div class="form-group">
+        <label for="country">{{'COUNTRY' | translate }}</label>
+        <input type="text" id="country" formControlName="country" required>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="area">{{'AREA' | translate }}</label>
+        <input type="text" id="area" formControlName="area" required>
+      </div>
+      <div class="form-group">
+        <label for="countryCode">{{'COUNTRY_CODE' | translate }}</label>
+        <input type="text" id="countryCode" formControlName="countryCode" required>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="experienceWorking">{{'EXPERIENCE' | translate}}</label>
+        <input type="number" id="experienceWorking" formControlName="experienceWorking" min="0" required>
+      </div>
+      <div class="form-group">
+        <label for="skillName">{{'SKILL_NAME' | translate }}</label>
+        <input type="text" id="skillName" formControlName="skillName" required>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="value">{{'VALUE' | translate }}</label>
+        <input type="number" step="0.1" id="value" formControlName="value" min="1" max="5" required>
+      </div>
+      <div class="form-group">
+        <label for="descriptionSkill">{{'DESCRIPTION_SKILL' | translate }}</label>
+        <textarea id="descriptionSkill" formControlName="descriptionSkill" rows="3" required></textarea>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <label for="photoUrl">{{'PHOTO_URL' | translate }}</label>
+      <input type="url" id="photoUrl" formControlName="photoUrl">
+    </div>
+
+    <button type="submit">{{'ADD_WORKER' | translate}}</button>
+  </form>
+</div>
+</body>
+</html>

@@ -1,7 +1,7 @@
 {
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Jose",
       "email": "example@mail.com",
       "phone": "987654321",
@@ -10,7 +10,7 @@
   ],
   "workers": [
     {
-      "id": 1,
+      "id": "1",
       "firstname": "Juan",
       "lastname": "Pérez",
       "emailAddress": "juan.perez@example.com",
@@ -32,7 +32,7 @@
   ],
   "employers": [
     {
-      "id": 1,
+      "id": "1",
       "photo": "https://www.shutterstock.com/image-photo/young-hispanic-man-wearing-blue-600nw-2214648345.jpg",
       "name": "Pedro Alejandro",
       "location": "Tingo Maria, Perú",
@@ -45,7 +45,8 @@
       "name": "Josue Castro",
       "jobTitle": "Ingeniero de sistemas",
       "location": "Piura",
-      "rate": 4.5
+      "rate": 4.5,
+      "id": "a783"
     }
   ]
 }

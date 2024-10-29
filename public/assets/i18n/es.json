@@ -46,5 +46,7 @@
   "DESCRIPTION_SKILL": "Descripción de la Habilidad",
   "PHOTO_URL": "Foto Imagen",
   "MORE": "Gestión de Trabajador",
-  "ADD_WORKER": "Agregar Trabajador"
+  "ADD_WORKER": "Agregar Trabajador",
+  "NEXT_WORKER": "Siguiente Trabajador",
+  "PREVIOUS_WORKER": "Trabajador Anterior"
 }
