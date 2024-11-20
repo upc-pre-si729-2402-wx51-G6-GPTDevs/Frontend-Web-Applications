@@ -74,11 +74,6 @@ export class UpdateWorkerComponent {
         alert(`Worker updated successfully: ${updatedWorker.firstname}`);
         this.isLoading = false;
         this.resetForm();
-      },
-      error: (err) => {
-        console.error(err);
-        alert('Error updating worker');
-        this.isLoading = false;
       }
     });
   }

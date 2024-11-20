@@ -22,7 +22,7 @@ export class EmployersService extends BaseService{
     );
   }
 
-  deleteEmployer(id: number): Observable<void> {
+  deleteEmployer(id: string): Observable<void> {
     return this.http.delete<void>(`${this.baseUrl}/employers/${id}`);
   }
 

@@ -53,10 +53,6 @@ export class AddWorkerComponent {
         next: () => {
           alert('Worker added successfully!');
           this.router.navigate(['/profile-worker']);
-        },
-        error: (err) => {
-          console.error('Error adding worker:', err);
-          alert('There was an error adding the worker. Please try again.');
         }
       });
     } else {

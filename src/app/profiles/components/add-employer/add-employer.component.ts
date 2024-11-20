@@ -45,12 +45,8 @@ export class AddEmployerComponent {
 
       this.employerService.addEmployer(newEmployer).subscribe({
         next: () => {
-          alert('Worker added successfully!');
+          alert('Employer added successfully!');
           this.router.navigate(['/profile-employer']);
-        },
-        error: (err) => {
-          console.error('Error adding worker:', err);
-          alert('There was an error adding the worker. Please try again.');
         }
       });
     } else {

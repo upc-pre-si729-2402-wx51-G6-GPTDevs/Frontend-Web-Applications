@@ -26,14 +26,10 @@ export class DeleteWorkerComponent {
 
   onDelete() {
     if (this.workerId) {
-      this.workersService.deleteWorker(this.workerId).subscribe({
+      this.workersService.deleteWorker(this.workerId.toString()).subscribe({
         next: () => {
           alert('Trabajador eliminado correctamente.');
           this.router.navigate(['/profile-worker']);
-        },
-        error: (err) => {
-          console.error('Error al eliminar trabajador', err);
-          alert('Hubo un error al eliminar el trabajador. Inténtalo nuevamente.');
         }
       });
     } else {

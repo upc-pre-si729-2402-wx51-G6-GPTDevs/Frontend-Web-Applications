@@ -62,11 +62,6 @@ export class UpdateEmployerComponent {
         alert(`Employer updated successfully: ${updatedEmployer.firstname}`);
         this.isLoading = false;
         this.resetForm();
-      },
-      error: (err) => {
-        console.error(err);
-        alert('Error updating employer');
-        this.isLoading = false;
       }
     });
   }

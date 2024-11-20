@@ -2,7 +2,7 @@
   <h2>{{ 'DELETE_EMPLOYER'|translate }}</h2>
   <div>
     <label for="workerId">{{'EMPLOYER_ID'|translate}}</label>
-    <input type="number" id="workerId" [(ngModel)]="employerId" required />
+    <input type="text" id="workerId" [(ngModel)]="employerId" required />
   </div>
   <button (click)="onDelete()">{{'DELETE_EMPLOYER'|translate}}</button>
   <button routerLink="/profile-employer" class="return-button">

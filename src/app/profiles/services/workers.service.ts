@@ -21,7 +21,7 @@ export class WorkersService extends BaseService {
     );
   }
 
-  deleteWorker(id: number): Observable<void> {
+  deleteWorker(id: string): Observable<void> {
     return this.http.delete<void>(`${this.baseUrl}/workers/${id}`);
   }
 

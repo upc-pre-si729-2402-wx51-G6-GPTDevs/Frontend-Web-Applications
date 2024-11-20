@@ -25,10 +25,10 @@ label {
   color: #555;
 }
 
-input[type="number"] {
+input[type="text"] {
   width: 100%;
   padding: 12px;
-  margin-bottom: 30px; /* Incremento del margen inferior */
+  margin-bottom: 30px;
   border: 1px solid #ccc;
   border-radius: 8px;
   font-size: 16px;
@@ -36,7 +36,7 @@ input[type="number"] {
   transition: border-color 0.3s ease-in-out;
 }
 
-input[type="number"]:focus {
+input[type="text"]:focus {
   outline: none;
   border-color: #007bff;
 }
