@@ -28,15 +28,56 @@
       "skillName": "JavaScript",
       "descriptionSkill": "Experto en desarrollo de aplicaciones web con JavaScript y frameworks modernos.",
       "photoUrl": "https://t4.ftcdn.net/jpg/04/85/09/47/360_F_485094704_XTwE3psMhKbWaop5i71wu4rr1SJjLRaB.jpg"
+    },
+    {
+      "id": "2",
+      "firstname": "Ana",
+      "lastname": "Gómez",
+      "emailAddress": "ana.gomez@example.com",
+      "street": "Avenida Siempre Viva",
+      "numberStreet": "742",
+      "district": "Miraflores",
+      "postalCode": "67890",
+      "city": "Lima",
+      "country": "Perú",
+      "area": "Diseño Gráfico",
+      "experienceWorking": 3,
+      "countryCode": "+51",
+      "number": "912345678",
+      "value": 4.8,
+      "skillName": "Adobe Photoshop",
+      "descriptionSkill": "Especialista en diseño gráfico y edición de imágenes con Adobe Photoshop.",
+      "photoUrl": "https://t4.ftcdn.net/jpg/03/20/01/69/360_F_320016978_OH8HmuP1eFZVcikX5GSJ1FbhsdNqI7PL.jpg"
     }
   ],
   "employers": [
     {
       "id": "1",
-      "photo": "https://www.shutterstock.com/image-photo/young-hispanic-man-wearing-blue-600nw-2214648345.jpg",
-      "name": "Pedro Alejandro",
-      "location": "Tingo Maria, Perú",
-      "bio": "Tengo 25 años y estoy en búsqueda de personas que posean un nivel de conocimiento sobresaliente en programación, especificamente en el ámbito del desarrollo de sitios web o aplicaciones móviles, se otorgará un horario flexible dependiendo de sus necesidades, ofrecemos un ambiente laboral agradable y muy unido."
+      "firstname": "John",
+      "lastname": "Doe",
+      "location": "123 Main Street, Springfield",
+      "name": "Doe Enterprises",
+      "numberOfEmployees": 50,
+      "website": "https://www.doeenterprises.com",
+      "industryName": "Technology",
+      "countryCode": "+51",
+      "number": "984736284",
+      "photoUrl": "https://www.shutterstock.com/image-photo/young-hispanic-man-wearing-blue-600nw-2214648345.jpg",
+      "paymentMethod": "Credit Card"
+    },
+    {
+      "id": "2",
+      "firstname": "Alice",
+      "lastname": "Smith",
+      "location": "456 Oak Avenue, Greenfield",
+      "name": "Smith Solutions",
+      "numberOfEmployees": 30,
+      "website": "https://www.smithsolutions.com",
+      "industryName": "Consulting",
+      "countryCode": "+44",
+      "number": "123456789",
+      "photoUrl": "https://blogs.iadb.org/igualdad/wp-content/uploads/sites/33/2021/12/businesswoman-holding-tablet-pc-smiling-camera1.jpg",
+      "paymentMethod": "PayPal"
     }
   ],
   "dashboard": [

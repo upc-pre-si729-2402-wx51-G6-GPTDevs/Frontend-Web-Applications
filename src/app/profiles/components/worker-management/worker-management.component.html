@@ -6,12 +6,16 @@
 </head>
 <body>
 <div class="giant-box">
-  <h1>Worker Management</h1>
+  <h1>{{ 'MANAGEMENT' | translate}}</h1>
   <div class="button-container">
-    <button id="createButton" routerLink="/add-worker">Create Worker (POST)</button>
-    <button id="getButton">Get All Workers (GET)</button>
-    <button id="updateButton">Update Worker (PUT)</button>
-    <button id="deleteButton">Delete Worker (DELETE)</button>
+
+    <button id="createButton" routerLink="/add-worker">{{  'POST_WORKER' | translate}}</button>
+    <button id="getButton" routerLink="/get-all-workers">{{  'GET_ALL_WORKERS' | translate}}</button>
+    <button id="updateButton" routerLink="/update-worker">{{  'UPDATE_WORKER' | translate}}</button>
+    <button id="deleteButton" routerLink="/delete-worker">{{  'DELETE_WORKER' | translate}}</button>
+    <button routerLink="/profile-worker" class="return-button">
+      {{ 'RETURN_WORKER_PROFILE' | translate }}
+    </button>
   </div>
 
 </div>

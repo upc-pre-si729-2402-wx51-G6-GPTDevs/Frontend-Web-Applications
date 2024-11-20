@@ -1,0 +1,104 @@
+.delete-employer-container {
+  background-color: #fff;
+  border: 2px solid #ccc;
+  padding: 40px; /* Incremento de padding */
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin: 60px auto; /* Más espacio vertical */
+  text-align: center;
+}
+
+h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 30px; /* Más espacio debajo del título */
+}
+
+label {
+  display: block;
+  margin-bottom: 15px; /* Más espacio debajo del label */
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 30px; /* Incremento del margen inferior */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease-in-out;
+}
+
+input[type="number"]:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  background-color: #9c1919;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #631515;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Margen adicional para el botón de retorno */
+.return-button {
+  margin-top: 20px; /* Espacio adicional sobre el botón de retorno */
+  background-color: #007bff; /* Color diferente para distinguirlo */
+}
+
+.return-button:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (max-width: 768px) {
+  .delete-employer-container {
+    padding: 30px;
+    margin: 30px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .delete-employer-container {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  input[type="number"] {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 16px;
+  }
+}

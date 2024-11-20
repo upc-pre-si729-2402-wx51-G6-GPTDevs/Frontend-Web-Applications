@@ -1,0 +1,13 @@
+<div class="delete-worker-container">
+  <h2>{{ 'DELETE_WORKER' |translate }}</h2>
+  <div>
+    <label for="workerId">{{'WORKER_ID' | translate}}</label>
+    <input type="number" id="workerId" [(ngModel)]="workerId" required />
+  </div>
+  <button (click)="onDelete()">{{ 'DELETE_WORKER' |translate }}</button>
+
+  <button routerLink="/profile-worker" class="return-button">
+    {{ 'RETURN_WORKER_PROFILE' | translate }}
+  </button>
+
+</div>

@@ -3,15 +3,15 @@ import {RouterLink} from "@angular/router";
 import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
-  selector: 'app-worker-management',
+  selector: 'app-employer-management',
   standalone: true,
   imports: [
     RouterLink,
     TranslateModule
   ],
-  templateUrl: './worker-management.component.html',
-  styleUrl: './worker-management.component.css'
+  templateUrl: './employer-management.component.html',
+  styleUrl: './employer-management.component.css'
 })
-export class WorkerManagementComponent {
+export class EmployerManagementComponent {
 
 }

@@ -1,0 +1,17 @@
+<div class="workers-container">
+  <div class="header">
+    <h2>{{'LIST_WORKERS' | translate}}</h2>
+    <button class="back-button" routerLink="/profile-worker">{{'RETURN_WORKER_PROFILE'|translate}}</button>
+  </div>
+  <div class="workers-grid">
+    <div class="worker-card" *ngFor="let worker of workers">
+      <div class="image-container">
+        <img [src]="worker.photoUrl" [alt]="worker.firstname + ' ' + worker.lastname" />
+      </div>
+      <h3>{{ worker.firstname }} {{ worker.lastname }}</h3>
+      <p><strong>ID:</strong> {{ worker.id }}</p>
+      <p><strong>Email:</strong> {{ worker.emailAddress }}</p>
+      <p><strong>Teléfono:</strong> {{ worker.countryCode }} {{ worker.number }}</p>
+    </div>
+  </div>
+</div>

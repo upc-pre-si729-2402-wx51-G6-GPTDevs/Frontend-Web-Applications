@@ -1,0 +1,138 @@
+<div class="update-employer-container">
+  <h2>{{'UPDATE_EMPLOYER'|translate}}</h2>
+
+  <form (ngSubmit)="onUpdateEmployer()">
+    <label for="employerId">{{'EMPLOYER_ID'|translate}}</label>
+    <input
+      type="number"
+      id="employerId"
+      [(ngModel)]="employerId"
+      name="employerId"
+      placeholder="Enter Employer ID"
+      required
+    />
+
+    <button type="button" (click)="onSearchEmployer()" [disabled]="isLoading">{{'SEARCH_EMPLOYER'|translate}}</button>
+
+    <div *ngIf="isLoading" class="loading-indicator">Loading...</div>
+
+    <div *ngIf="isEmployerFound">
+      <label for="firstname">{{'FIRST_NAME'|translate}}</label>
+      <input
+        type="text"
+        id="firstname"
+        [(ngModel)]="employer.firstname"
+        name="firstname"
+        placeholder="Enter First Name"
+        required
+      />
+
+      <label for="lastname">{{'LAST_NAME'|translate}}</label>
+      <input
+        type="text"
+        id="lastname"
+        [(ngModel)]="employer.lastname"
+        name="lastname"
+        placeholder="Enter Last Name"
+        required
+      />
+
+      <label for="location">{{'LOCATION'|translate}}</label>
+      <input
+        type="text"
+        id="location"
+        [(ngModel)]="employer.location"
+        name="location"
+        placeholder="Enter Location"
+        required
+      />
+
+      <label for="name">{{'NAME'|translate}}</label>
+      <input
+        type="text"
+        id="name"
+        [(ngModel)]="employer.name"
+        name="name"
+        placeholder="Enter Company Name"
+        required
+      />
+
+      <label for="numberOfEmployees">{{'NUMBER_OF_EMPLOYEES'|translate}}</label>
+      <input
+        type="number"
+        id="numberOfEmployees"
+        [(ngModel)]="employer.numberOfEmployees"
+        name="numberOfEmployees"
+        placeholder="Enter Number of Employees"
+        required
+      />
+
+      <label for="website">{{'WEBSITE'|translate}}</label>
+      <input
+        type="url"
+        id="website"
+        [(ngModel)]="employer.website"
+        name="website"
+        placeholder="Enter Website"
+        required
+      />
+
+      <label for="industryName">{{'INDUSTRY_NAME'|translate}}</label>
+      <input
+        type="text"
+        id="industryName"
+        [(ngModel)]="employer.industryName"
+        name="industryName"
+        placeholder="Enter Industry Name"
+        required
+      />
+
+      <label for="countryCode">{{'COUNTRY_CODE'|translate}}</label>
+      <input
+        type="text"
+        id="countryCode"
+        [(ngModel)]="employer.countryCode"
+        name="countryCode"
+        placeholder="Enter Country Code"
+        required
+      />
+
+      <label for="number">{{'NUMBER'|translate}}</label>
+      <input
+        type="text"
+        id="number"
+        [(ngModel)]="employer.number"
+        name="number"
+        placeholder="Enter Phone Number"
+        required
+      />
+
+      <label for="photoUrl">{{'PHOTO_URL'|translate}}</label>
+      <input
+        type="text"
+        id="photoUrl"
+        [(ngModel)]="employer.photoUrl"
+        name="photoUrl"
+        placeholder="Enter Photo URL"
+        required
+      />
+
+      <label for="paymentMethod">{{'PAYMENT_METHOD'|translate}}</label>
+      <input
+        type="text"
+        id="paymentMethod"
+        [(ngModel)]="employer.paymentMethod"
+        name="paymentMethod"
+        placeholder="Enter Payment Method"
+        required
+      />
+
+      <button type="submit" [disabled]="isLoading">{{'UPDATE_EMPLOYER'|translate}}</button>
+      <button routerLink="/profile-employer" class="return-button">
+        {{ 'RETURN_EMPLOYER_PROFILE' | translate }}
+      </button>
+    </div>
+  </form>
+
+  <div *ngIf="isLoading" class="loading-indicator">Updating Employer...</div>
+</div>

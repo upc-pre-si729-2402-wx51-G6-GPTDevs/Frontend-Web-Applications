@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Employer Management</title>
+</head>
+<body>
+<div class="giant-box">
+  <h1>{{ 'EMPLOYER_MANAGEMENT' | translate}}</h1>
+  <div class="button-container">
+    <button id="createButton" routerLink="/add-employer">{{ 'POST_EMPLOYER'|translate }}</button>
+    <button id="getButton" routerLink="/get-all-employers">{{ 'GET_ALL_EMPLOYERS'|translate }}</button>
+    <button id="updateButton" routerLink="/update-employer">{{ 'UPDATE_EMPLOYER' |translate }}</button>
+    <button id="deleteButton" routerLink="/delete-employer">{{ 'DELETE_EMPLOYER' | translate }}</button>
+    <button routerLink="/profile-employer" class="return-button">
+      {{ 'RETURN_EMPLOYER_PROFILE' | translate }}
+    </button>
+  </div>
+
+</div>
+
+<script src="employer-management.component.js"></script>
+</body>
+</html>
+

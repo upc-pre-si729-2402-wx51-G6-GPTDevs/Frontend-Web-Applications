@@ -20,4 +20,18 @@ export class WorkersService extends BaseService {
       tap((newWorker: Worker) => this.workerAddedSource.next(newWorker))
     );
   }
+
+  deleteWorker(id: number): Observable<void> {
+    return this.http.delete<void>(`${this.baseUrl}/workers/${id}`);
+  }
+
+  getWorkerById(id: number): Observable<Worker> {
+    return this.http.get<Worker>(`${this.baseUrl}/workers/${id}`);
+  }
+
+  updateWorker(id: number, worker: Worker): Observable<Worker> {
+    return this.http.put<Worker>(`${this.baseUrl}/workers/${id}`, worker);
+  }
+
+
 }

@@ -1,0 +1,17 @@
+<div class="employers-container">
+  <div class="header">
+    <h2>{{ 'LIST_EMPLOYERS'|translate }}</h2>
+    <button class="back-button" routerLink="/profile-employer">{{'RETURN_EMPLOYER_PROFILE'|translate}}</button>
+  </div>
+  <div class="employers-grid">
+    <div class="employer-card" *ngFor="let employer of employers">
+      <div class="image-container">
+        <img [src]="employer.photoUrl" [alt]="employer.name" />
+      </div>
+      <h3>{{ employer.firstname }} {{ employer.lastname }}</h3>
+      <p><strong>{{'NAME'|translate}}: </strong> {{ employer.name }}</p>
+      <p><strong>ID: </strong> {{ employer.id }}</p>
+      <p><strong>{{'WEBSITE'|translate}}: </strong> <a [href]="employer.website" target="_blank">{{ employer.website }}</a></p>
+    </div>
+  </div>
+</div>

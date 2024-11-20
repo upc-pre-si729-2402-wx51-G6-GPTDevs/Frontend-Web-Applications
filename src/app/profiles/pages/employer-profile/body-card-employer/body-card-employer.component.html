@@ -4,12 +4,27 @@
     <p class="bold-text">{{'PROFILE_2' | translate}}</p>
 
     <div class="photo-container">
-      <img [src]="employer?.photo" alt="Foto de perfil del empleador" class="profile-photo" />
+      <img [src]="employer?.photoUrl" alt="Foto de perfil" class="profile-photo" />
     </div>
 
     <div class="info-field">
-      <label for="id">Id:</label>
+      <label for="firstname">{{'ID' | translate}}:</label>
       <span id="id">{{ employer?.id }}</span>
+    </div>
+
+    <div class="info-field">
+      <label for="firstname">{{'FIRST_NAME' | translate}}:</label>
+      <span id="firstname">{{ employer?.firstname }}</span>
+    </div>
+
+    <div class="info-field">
+      <label for="lastname">{{'LAST_NAME' | translate}}:</label>
+      <span id="lastname">{{ employer?.lastname }}</span>
+    </div>
+
+    <div class="info-field">
+      <label for="location">{{'LOCATION' | translate}}:</label>
+      <span id="location">{{ employer?.location }}</span>
     </div>
 
     <div class="info-field">
@@ -18,26 +33,53 @@
     </div>
 
     <div class="info-field">
-      <label for="location">{{'LOCATION' | translate}}:</label>
-      <span id="location">{{ employer?.location }}</span>
+      <label for="numberOfEmployees">{{'NUMBER_OF_EMPLOYEES' | translate}}:</label>
+      <span id="numberOfEmployees">{{ employer?.numberOfEmployees }}</span>
     </div>
+
+    <div class="info-field">
+      <label for="website">{{'WEBSITE' | translate}}:</label>
+      <span id="website">{{ employer?.website }}</span>
+    </div>
+
+    <div class="info-field">
+      <label for="industryName">{{'INDUSTRY_NAME' | translate}}:</label>
+      <span id="industryName">{{ employer?.industryName }}</span>
+    </div>
+
+    <div class="info-field">
+      <label for="countryCode">{{'COUNTRY_CODE' | translate}}:</label>
+      <span id="countryCode">{{ employer?.countryCode }}</span>
+    </div>
+
+    <div class="info-field">
+      <label for="number">{{'NUMBER' | translate}}:</label>
+      <span id="number">{{ employer?.number }}</span>
+    </div>
+
+    <div class="info-field">
+      <label for="paymentMethod">{{'PAYMENT_METHOD' | translate}}:</label>
+      <span id="paymentMethod">{{ employer?.paymentMethod }}</span>
+    </div>
+
   </div>
 
   <div class="divider"></div>
 
   <div class="details-container">
-    <div class="bio-box">
-      <p class="bold-text">{{'BIOGRAPHY' | translate}}</p>
-      <p>{{ employer?.bio }}</p>
+
+    <div class="center-buttons">
+      <button routerLink="/profile-worker">{{'CHANGE_PROFILE' | translate}}</button>
+      <button routerLink="/employer-management">{{'EMPLOYER_MANAGEMENT' | translate}}</button>
+      <button>{{'UPLOAD_FILES' | translate}}</button>
+      <button>{{'CARDS' | translate}}</button>
+      <button routerLink="/task">{{'PUBLISH_JOB' | translate}}</button>
     </div>
 
-    <div class="button-container">
-      <button>{{'WORKS_HISTORY' | translate}}</button>
-      <button routerLink="/profile-worker">{{'CHANGE_PROFILE' | translate}}</button>
-    </div>
-    <div class="rating-box">
-      <p class="bold-text">{{'SCORE' | translate}}</p>
-      <div class="stars">★★★★★</div>
+    <div class="prev-next-buttons">
+      <button (click)="previousEmployer()">{{'PREVIOUS_EMPLOYER' | translate}}</button>
+      <button (click)="nextEmployer()">{{'NEXT_EMPLOYER' | translate}}</button>
     </div>
   </div>
+
 </div>

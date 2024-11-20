@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Add Employer</title>
+</head>
+<body>
+<div class="form-container">
+  <h1>{{ 'ADD_EMPLOYER' | translate }}</h1>
+  <form [formGroup]="employerForm" (ngSubmit)="onSubmit()">
+    <div class="form-row">
+      <div class="form-group">
+        <label for="firstName">{{'FIRST_NAME' | translate }}</label>
+        <input type="text" id="firstName" formControlName="firstName" required>
+      </div>
+      <div class="form-group">
+        <label for="lastName">{{'LAST_NAME' | translate }}</label>
+        <input type="text" id="lastName" formControlName="lastName" required>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="location">{{'LOCATION' | translate }}</label>
+        <input type="text" id="location" formControlName="location" required>
+      </div>
+      <div class="form-group">
+        <label for="name">{{'NAME' | translate }}</label>
+        <input type="text" id="name" formControlName="name" required>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="numberOfEmployees">{{'NUMBER_OF_EMPLOYEES' | translate }}</label>
+        <input type="text" id="numberOfEmployees" formControlName="numberOfEmployees" required>
+      </div>
+      <div class="form-group">
+        <label for="webSite">{{'WEBSITE' | translate }}</label>
+        <input type="text" id="webSite" formControlName="webSite" required>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="industryName">{{'INDUSTRY_NAME' | translate }}</label>
+        <input type="text" id="industryName" formControlName="industryName" required>
+      </div>
+      <div class="form-group">
+        <label for="countryCode">{{'COUNTRY_CODE' | translate }}</label>
+        <input type="text" id="countryCode" formControlName="countryCode" required>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="number">{{'NUMBER' | translate }}</label>
+        <input type="text" id="number" formControlName="number" required>
+      </div>
+      <div class="form-group">
+        <label for="photoURL">{{'PHOTO_URL' | translate }}</label>
+        <input type="text" id="photoURL" formControlName="photoURL" required>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="paymentMethod">{{'PAYMENT_METHOD' | translate }}</label>
+        <input type="text" id="paymentMethod" formControlName="paymentMethod" required>
+      </div>
+    </div>
+
+
+    <button type="submit">{{'ADD_EMPLOYER' | translate }}</button>
+  </form>
+</div>
+</body>
+</html>
