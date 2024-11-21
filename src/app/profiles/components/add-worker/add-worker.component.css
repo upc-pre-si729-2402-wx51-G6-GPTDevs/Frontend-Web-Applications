@@ -90,3 +90,16 @@ button:hover {
     font-size: 14px;
   }
 }
+
+.return-button {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #878180;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}

@@ -2,7 +2,7 @@
   <h2>{{ 'DELETE_WORKER' |translate }}</h2>
   <div>
     <label for="workerId">{{'WORKER_ID' | translate}}</label>
-    <input type="text" id="workerId" [(ngModel)]="workerId" required />
+    <input type="number" id="workerId" [(ngModel)]="workerId" required />
   </div>
   <button (click)="onDelete()">{{ 'DELETE_WORKER' |translate }}</button>
 

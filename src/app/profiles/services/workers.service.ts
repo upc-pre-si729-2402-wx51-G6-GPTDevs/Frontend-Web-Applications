@@ -12,25 +12,25 @@ export class WorkersService extends BaseService {
   workerAdded$ = this.workerAddedSource.asObservable();
 
   getWorkers(): Observable<Worker[]> {
-    return this.http.get<Worker[]>(`${this.baseUrl}/workers`);
+    return this.http.get<Worker[]>(`${this.baseUrl}/workerProfile`);
   }
 
   addWorker(worker: Worker): Observable<Worker> {
-    return this.http.post<Worker>(`${this.baseUrl}/workers`, worker).pipe(
+    return this.http.post<Worker>(`${this.baseUrl}/workerProfile`, worker).pipe(
       tap((newWorker: Worker) => this.workerAddedSource.next(newWorker))
     );
   }
 
-  deleteWorker(id: string): Observable<void> {
-    return this.http.delete<void>(`${this.baseUrl}/workers/${id}`);
+  deleteWorker(id: number): Observable<void> {
+    return this.http.delete<void>(`${this.baseUrl}/workerProfile/${id}`);
   }
 
   getWorkerById(id: number): Observable<Worker> {
-    return this.http.get<Worker>(`${this.baseUrl}/workers/${id}`);
+    return this.http.get<Worker>(`${this.baseUrl}/workerProfile/${id}`);
   }
 
   updateWorker(id: number, worker: Worker): Observable<Worker> {
-    return this.http.put<Worker>(`${this.baseUrl}/workers/${id}`, worker);
+    return this.http.put<Worker>(`${this.baseUrl}/workerProfile/${id}`, worker);
   }
 
 

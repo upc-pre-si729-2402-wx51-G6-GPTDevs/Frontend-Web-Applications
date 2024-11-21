@@ -13,24 +13,24 @@ export class EmployersService extends BaseService{
   employerAdded$ = this.employerAddedSource.asObservable();
 
   getEmployers(): Observable<Employer[]> {
-    return this.http.get<Employer[]>(`${this.baseUrl}/employers`);
+    return this.http.get<Employer[]>(`${this.baseUrl}/employerProfile`);
   }
 
   addEmployer(employer: Employer): Observable<Employer> {
-    return this.http.post<Employer>(`${this.baseUrl}/employers`, employer).pipe(
+    return this.http.post<Employer>(`${this.baseUrl}/employerProfile`, employer).pipe(
       tap((newEmployer: Employer) => this.employerAddedSource.next(newEmployer))
     );
   }
 
-  deleteEmployer(id: string): Observable<void> {
-    return this.http.delete<void>(`${this.baseUrl}/employers/${id}`);
+  deleteEmployer(id: number): Observable<void> {
+    return this.http.delete<void>(`${this.baseUrl}/employerProfile/${id}`);
   }
 
   getEmployerById(id: number): Observable<Employer> {
-    return this.http.get<Employer>(`${this.baseUrl}/employers/${id}`);
+    return this.http.get<Employer>(`${this.baseUrl}/employerProfile/${id}`);
   }
 
   updateEmployer(id: number, employer: Employer): Observable<Employer> {
-    return this.http.put<Employer>(`${this.baseUrl}/employers/${id}`, employer);
+    return this.http.put<Employer>(`${this.baseUrl}/employerProfile/${id}`, employer);
   }
 }

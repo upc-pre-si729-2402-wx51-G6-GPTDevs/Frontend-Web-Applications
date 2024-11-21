@@ -26,7 +26,7 @@ export class DeleteWorkerComponent {
 
   onDelete() {
     if (this.workerId) {
-      this.workersService.deleteWorker(this.workerId.toString()).subscribe({
+      this.workersService.deleteWorker(this.workerId).subscribe({
         next: () => {
           alert('Trabajador eliminado correctamente.');
           this.router.navigate(['/profile-worker']);

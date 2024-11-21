@@ -28,7 +28,7 @@ export class DeleteEmployerComponent {
 
   onDelete() {
     if (this.employerId) {
-      this.employersService.deleteEmployer(this.employerId.toString()).subscribe({
+      this.employersService.deleteEmployer(this.employerId).subscribe({
         next: () => {
           alert('Empleador eliminado correctamente.');
           this.router.navigate(['/profile-employer']);

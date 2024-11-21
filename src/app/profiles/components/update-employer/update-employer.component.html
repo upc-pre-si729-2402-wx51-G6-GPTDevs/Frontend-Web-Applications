@@ -14,6 +14,10 @@
 
     <button type="button" (click)="onSearchEmployer()" [disabled]="isLoading">{{'SEARCH_EMPLOYER'|translate}}</button>
 
+    <button routerLink="/profile-employer" class="return-button">
+      {{ 'RETURN_EMPLOYER_PROFILE' | translate }}
+    </button>
+
     <div *ngIf="isLoading" class="loading-indicator">Loading...</div>
 
     <div *ngIf="isEmployerFound">

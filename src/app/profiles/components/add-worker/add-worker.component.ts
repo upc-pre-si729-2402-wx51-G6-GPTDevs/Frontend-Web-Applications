@@ -2,7 +2,7 @@ import {Component, inject, Input} from '@angular/core';
 import {TranslateModule} from "@ngx-translate/core";
 import {FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators} from "@angular/forms";
 import {WorkersService} from "../../services/workers.service";
-import {Route, Router} from "@angular/router";
+import {Route, Router, RouterLink} from "@angular/router";
 import {Worker} from "../../models/worker";
 
 @Component({
@@ -11,7 +11,8 @@ import {Worker} from "../../models/worker";
   imports: [
     TranslateModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    RouterLink
   ],
   templateUrl: './add-worker.component.html',
   styleUrl: './add-worker.component.css'

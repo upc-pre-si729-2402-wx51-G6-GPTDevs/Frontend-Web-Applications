@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {FormBuilder, FormGroup, ReactiveFormsModule} from "@angular/forms";
-import {Router} from "@angular/router";
+import {Router, RouterLink} from "@angular/router";
 import {EmployersService} from "../../services/employers.service";
 import {TranslateModule} from "@ngx-translate/core";
 
@@ -9,7 +9,8 @@ import {TranslateModule} from "@ngx-translate/core";
   standalone: true,
   imports: [
     TranslateModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RouterLink
   ],
   templateUrl: './add-employer.component.html',
   styleUrl: './add-employer.component.css'
