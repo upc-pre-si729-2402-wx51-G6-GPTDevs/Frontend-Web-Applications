@@ -9,7 +9,8 @@ import { Router, RouterLink } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { AuthApiService } from '../../services/auth-api.service';
 import { User } from '../../models/user.entity';
-import {HttpClient} from "@angular/common/http";
+import { SnackbarComponent } from '../../../public/components/snackbar/snackbar.component';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-login',
@@ -22,26 +23,36 @@ export class LoginComponent {
   email: string = '';
   password: string = '';
 
-  constructor(
-    private router: Router,
-    private authApiService: AuthApiService,
-    private http: HttpClient
-  ) {}
+  authApi = inject(AuthApiService);
+  router = inject(Router);
+  snackBar = inject(MatSnackBar);
 
   onSubmit() {
-    this.http.post('https://tasklinker.azurewebsites.net/api/v1/authentication/sign-in', {
-      email: this.email,
-      password: this.password
-    }).subscribe(
+    this.authApi.login(this.email, this.password).subscribe(
       (response: any) => {
         const token = response.token;
+
         if (token) {
-          this.authApiService.saveToken(token);
+          localStorage.setItem('authToken', token);
+
+          this.snackBar.openFromComponent(SnackbarComponent, {
+            data: {
+              message: 'Login successful.',
+              icon: 'close'
+            }
+          });
+          //alert('Login successful.');
+
           this.router.navigate(['/home']);
         }
-      },
-      (error) => {
-        console.error('Error de login', error);
+        else
+          this.snackBar.openFromComponent(SnackbarComponent, {
+            data: {
+              message: 'Login failed. User does not exist or incorrect password.',
+              icon: 'close'
+            }
+          });
+        //alert('Login failed. User does not exist or incorrect password.');
       }
     );
   }
