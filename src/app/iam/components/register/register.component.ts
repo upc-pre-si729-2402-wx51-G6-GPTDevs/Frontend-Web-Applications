@@ -5,7 +5,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatCardModule } from '@angular/material/card';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { User } from '../../models/user.entity';
 import { AuthApiService } from '../../services/auth-api.service';
@@ -23,6 +23,7 @@ export class RegisterComponent {
   @Input() phoneNumber!: number
   @Input() password: string = ''
 
+  router = inject(Router);
   authApi = inject(AuthApiService);
 
   onSubmit() {
@@ -34,5 +35,6 @@ export class RegisterComponent {
     })
 
     this.authApi.register(user).subscribe();
+    this.router.navigate(['/home']);
   }
 }

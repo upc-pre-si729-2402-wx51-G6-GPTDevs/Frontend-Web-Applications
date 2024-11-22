@@ -1,0 +1,304 @@
+/* Contenedor principal que agrupa todas las tarjetas */
+.worker-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Cada tarjeta individual */
+.giant-card {
+  width: 120%; /* Cambia a 100% para ocupar todo el ancho disponible */
+  max-width: 800px; /* Ajusta el valor de max-width para que sea más grande */
+  margin: 0 auto;
+  border: 2px solid #4a8a9e;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  padding: 40px; /* También puedes aumentar el padding si deseas */
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+}
+
+/* Contenedor de la cabecera del perfil */
+.profile-header {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Contenedor de la foto de perfil */
+.photo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Información de los detalles del trabajador */
+.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.info-field {
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.info-field label {
+  margin: 0;
+  width: 120px;
+  text-align: left;
+  color: black;
+  font-size: 16px;
+}
+
+.info-field span {
+  word-wrap: break-word;
+}
+
+.input-container {
+  flex-grow: 1;
+}
+
+input[type="text"] {
+  color: black;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  padding: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* Contenedor de detalles adicionales (biografía, calificación, botones) */
+.details-container {
+  text-align: center;
+}
+
+.bio-box {
+  margin: 15px 0;
+  color: black;
+  text-align: left;
+  font-size: 14px;
+}
+
+.rating-box {
+  margin: 15px 0;
+  text-align: center;
+}
+
+.rating-box .stars {
+  font-size: 24px;
+  color: gold;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.button-container button {
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: 2px solid #4a8a9e;
+  background-color: #f1f1f1;
+  color: #333;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+/* Efecto hover para los botones */
+.button-container button:hover {
+  background-color: #4a8a9e;
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo al hacer clic (active) */
+.button-container button:active {
+  background-color: #36737f;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  transform: scale(0.98);
+}
+
+/* Estilos específicos para los botones "Previous Worker" y "Next Worker" */
+.button-container button:nth-child(1) {
+  background-color: #e0f4f7;
+}
+
+.button-container button:nth-child(2) {
+  background-color: #e0f4f7;
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+  .button-container {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .button-container button {
+    width: 100%;
+    font-size: 12px;
+  }
+}
+
+/* Estilos para botones previos y siguientes */
+.prev-next-button {
+  padding: 8px;
+  border-radius: 20px;
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 12px;
+  width: 120px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.prev-next-button:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Estilo de foco para botones previos y siguientes */
+.prev-next-button:focus {
+  outline: 2px solid #4a8a9e;
+  background-color: #e0f4f7;
+}
+
+/* Estilos para los botones centrales */
+.center-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.center-buttons button {
+  padding: 8px;
+  border-radius: 20px;
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 12px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.center-buttons button:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Separador entre secciones */
+.divider {
+  height: 1px;
+  background-color: #ddd;
+  margin: 20px 0;
+  width: 90%;
+}
+
+h2,
+label {
+  color: black;
+  text-align: left;
+  font-size: 20px;
+}
+
+.bold-text {
+  font-weight: bold;
+  color: black;
+  font-size: 20px;
+}
+
+/* Responsividad para dispositivos móviles */
+@media (max-width: 600px) {
+  .giant-card {
+    padding: 10px;
+  }
+  .info-field label,
+  .info-field span {
+    font-size: 14px;
+  }
+  .button-container button {
+    font-size: 10px;
+  }
+}
+
+/* Estilos para el contenedor de botones Previous y Next */
+.prev-next-buttons button {
+  background-color: #000; /* Fondo negro */
+  color: #fff; /* Texto blanco */
+  border: 2px solid #333;
+  border-radius: 25px;
+  padding: 10px 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  outline: none;
+  margin: 0 10px; /* Separación horizontal de 10px */
+}
+
+
+.prev-next-buttons button:hover {
+  background-color: #333; /* Fondo gris oscuro en hover */
+  transform: scale(1.05);
+}
+
+/* Estilos para el contenedor de botones con fondo cyan claro */
+.center-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+  max-width: 800px; /* Igual al ancho máximo de giant-card */
+  margin: 0 auto;
+  padding-bottom: 15px;
+}
+
+/* Estilos de los botones centrales */
+.center-buttons button {
+  background-color: #e0ffff; /* Fondo cyan claro */
+  color: #333; /* Texto oscuro */
+  border: 2px solid #4a8a9e;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.center-buttons button:hover {
+  background-color: #b2ebf2; /* Fondo cyan oscuro en hover */
+  transform: scale(1.05);
+}
+
