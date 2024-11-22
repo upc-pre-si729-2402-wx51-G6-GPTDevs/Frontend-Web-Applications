@@ -18,20 +18,16 @@ import { AuthApiService } from '../../services/auth-api.service';
   styleUrl: './register.component.css'
 })
 export class RegisterComponent {
-  @Input() name: string = ''
   @Input() email: string = ''
-  @Input() phoneNumber!: number
   @Input() password: string = ''
+  @Input() cardNumber: string = ''
+  @Input() expirementDate: string = ''
+  @Input() securityCode: string = ''
 
   authApi = inject(AuthApiService);
 
   onSubmit() {
-    const user = new User({
-      name: this.name,
-      email: this.email,
-      phone: this.phoneNumber,
-      password: this.password
-    })
+    const user = new User({ email: this.email, password: this.password, cardNumber: this.cardNumber, expirementDate: this.expirementDate, securityCode: this.securityCode });
 
     this.authApi.register(user).subscribe();
   }

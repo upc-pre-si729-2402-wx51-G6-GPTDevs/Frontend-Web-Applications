@@ -9,23 +9,28 @@
         </div>
 
         <mat-form-field>
-            <mat-label>Name</mat-label>
-            <input matInput type="text" name="name" [(ngModel)]="name">
-        </mat-form-field>
-
-        <mat-form-field>
             <mat-label>Email</mat-label>
             <input matInput type="text" name="email" [(ngModel)]="email">
         </mat-form-field>
 
         <mat-form-field>
-            <mat-label>Phone number</mat-label>
-            <input matInput type="text" name="phone" [(ngModel)]="phoneNumber">
+            <mat-label>Password</mat-label>
+            <input matInput type="password" name="password" [(ngModel)]="password">
         </mat-form-field>
 
         <mat-form-field>
-            <mat-label>Password</mat-label>
-            <input matInput type="password" name="password" [(ngModel)]="password">
+            <mat-label>Card Number</mat-label>
+            <input matInput type="text" name="cardNumber" [(ngModel)]="cardNumber">
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Expirement Date</mat-label>
+            <input matInput type="text" name="expirementDate" [(ngModel)]="expirementDate">
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Security Code</mat-label>
+            <input matInput type="text" name="securityCode" [(ngModel)]="securityCode">
         </mat-form-field>
 
         <mat-checkbox class="form__checkbox">
