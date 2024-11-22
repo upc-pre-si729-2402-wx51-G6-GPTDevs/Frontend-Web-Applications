@@ -7,15 +7,16 @@ import { User } from '../models/user.entity';
 })
 export class AuthApiService {
   http = inject(HttpClient);
-  apiUrl = "https://tasklinker-fake-api.vercel.app/users"
+  apiUrl = "https://tasklinker.azurewebsites.net/api/v1/authentication"
 
   constructor() { }
 
   login(email: string, password: string) {
-    return this.http.get(`${this.apiUrl}?email=${email}&password=${password}`, { observe: 'response' });
+    const body = { email, password };
+    return this.http.post(`${this.apiUrl}/sign-in`, body);
   }
 
   register(user: User) {
-    return this.http.post(this.apiUrl, user);
+    return this.http.post(`${this.apiUrl}/sign-up`, user);
   }
 }

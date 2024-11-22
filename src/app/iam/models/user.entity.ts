@@ -7,25 +7,25 @@
 } */
 
 type UserType = {
-    id?: number;
-    name: string;
-    email: string;
-    phone: number;
-    password: string;
+    email: string,
+    password: string,
+    cardNumber: string,
+    expirementDate: string,
+    securityCode: string
 }
 
 export class User {
-    id?: number;
-    name: string;
     email: string;
-    phone: number;
     password: string;
+    cardNumber: string;
+    expirementDate: string;
+    securityCode: string;
 
-    constructor({ id, name, email, phone, password }: UserType) {
-        this.id = id || 0;
-        this.name = name || '';
+    constructor({ email, password, cardNumber, expirementDate, securityCode }: UserType) {
         this.email = email || '';
-        this.phone = phone || 0;
         this.password = password || '';
+        this.cardNumber = cardNumber || '';
+        this.expirementDate = expirementDate || '';
+        this.securityCode = securityCode || '';
     }
 }

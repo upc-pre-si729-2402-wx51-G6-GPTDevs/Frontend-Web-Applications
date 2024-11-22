@@ -29,11 +29,12 @@ export class LoginComponent {
 
   onSubmit() {
     this.authApi.login(this.email, this.password).subscribe(
-      (response) => {
-        const data: User[] = response.body as User[];
+      (response: any) => {
+        const token = response.token;
 
+        if (token) {
+          localStorage.setItem('authToken', token);
 
-        if (data.length) {
           this.snackBar.openFromComponent(SnackbarComponent, {
             data: {
               message: 'Login successful.',
