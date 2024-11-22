@@ -9,6 +9,6 @@ import { Observable } from 'rxjs';
 export class DashboardService extends BaseService{
 
   getDashboard(): Observable<Dashboard[]> {
-    return this.http.get<Dashboard[]>(`${this.baseUrl}/dashboard`);
+    return this.http.get<Dashboard[]>(`${this.baseUrlDashboard}/dashboard`);
   }
 }

@@ -9,6 +9,7 @@ import { Router, RouterLink } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { AuthApiService } from '../../services/auth-api.service';
 import { User } from '../../models/user.entity';
+import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'app-login',
@@ -18,24 +19,29 @@ import { User } from '../../models/user.entity';
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
-  @Input() email: string = ''
-  @Input() password: string = ''
+  email: string = '';
+  password: string = '';
 
-  authApi = inject(AuthApiService);
-  router = inject(Router);
+  constructor(
+    private router: Router,
+    private authApiService: AuthApiService,
+    private http: HttpClient
+  ) {}
 
   onSubmit() {
-    this.authApi.login(this.email, this.password).subscribe(
-      (response) => {
-        const data: User[] = response.body as User[];
-
-
-        if (data.length) {
-          alert('Login successful.');
+    this.http.post('https://tasklinker.azurewebsites.net/api/v1/authentication/sign-in', {
+      email: this.email,
+      password: this.password
+    }).subscribe(
+      (response: any) => {
+        const token = response.token;
+        if (token) {
+          this.authApiService.saveToken(token);
           this.router.navigate(['/home']);
         }
-        else
-          alert('Login failed. User does not exist or incorrect password.');
+      },
+      (error) => {
+        console.error('Error de login', error);
       }
     );
   }

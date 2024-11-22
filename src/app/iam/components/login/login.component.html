@@ -1,25 +1,25 @@
 <mat-card class="form__container">
-    <mat-card-title class="form__title">Welcome to TaskLinker</mat-card-title>
+  <mat-card-title class="form__title">Welcome to TaskLinker</mat-card-title>
 
-    <form class="form" (submit)="onSubmit()">
-        <div class="form__links">
-            <b><a routerLink="/login">Login</a></b>
-            <a routerLink="/register">Register</a>
-            <mat-divider />
-        </div>
+  <form class="form" (submit)="onSubmit()">
+    <div class="form__links">
+      <b><a routerLink="/login">Login</a></b>
+      <a routerLink="/register">Register</a>
+      <mat-divider />
+    </div>
 
-        <mat-form-field>
-            <mat-label>Email</mat-label>
-            <input matInput type="text" name="email" [(ngModel)]="email">
-        </mat-form-field>
+    <mat-form-field>
+      <mat-label>Email</mat-label>
+      <input matInput type="text" name="email" [(ngModel)]="email" required>
+    </mat-form-field>
 
-        <mat-form-field>
-            <mat-label>Password</mat-label>
-            <input matInput type="password" name="password" [(ngModel)]="password">
-        </mat-form-field>
+    <mat-form-field>
+      <mat-label>Password</mat-label>
+      <input matInput type="password" name="password" [(ngModel)]="password" required>
+    </mat-form-field>
 
-        <mat-checkbox class="form__checkbox">Remember me</mat-checkbox>
+    <mat-checkbox class="form__checkbox">Remember me</mat-checkbox>
 
-        <button mat-flat-button type="submit" class="form__button">Login</button>
-    </form>
+    <button mat-flat-button type="submit" class="form__button">Login</button>
+  </form>
 </mat-card>

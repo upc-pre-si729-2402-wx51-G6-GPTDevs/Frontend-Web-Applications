@@ -18,23 +18,34 @@ import { AuthApiService } from '../../services/auth-api.service';
   styleUrl: './register.component.css'
 })
 export class RegisterComponent {
-  @Input() name: string = ''
-  @Input() email: string = ''
-  @Input() phoneNumber!: number
-  @Input() password: string = ''
+  @Input() name: string = '';
+  @Input() email: string = '';
+  @Input() phoneNumber!: number;
+  @Input() password: string = '';
+  @Input() cardNumber: string = '';
+  @Input() expirementDate: string = '';
+  @Input() securityCode: string = '';
 
   router = inject(Router);
   authApi = inject(AuthApiService);
 
   onSubmit() {
     const user = new User({
-      name: this.name,
       email: this.email,
-      phone: this.phoneNumber,
-      password: this.password
-    })
+      password: this.password,
+      cardNumber: this.cardNumber,
+      expirementDate: this.expirementDate,
+      securityCode: this.securityCode
+    });
 
-    this.authApi.register(user).subscribe();
-    this.router.navigate(['/home']);
+    this.authApi.register(user).subscribe(
+      () => {
+        alert('Registration successful. You can now log in.');
+        this.router.navigate(['/login']);
+      },
+      (error) => {
+        alert('Registration failed. Please try again.');
+      }
+    );
   }
 }

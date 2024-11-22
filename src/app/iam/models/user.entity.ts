@@ -1,31 +1,33 @@
-/* {
-    "id": 1,
-    "name": "Jose",
-    "email": "example@mail.com",
-    "phone": "987654321",
-    "password": "123"
-} */
-
 type UserType = {
-    id?: number;
-    name: string;
-    email: string;
-    phone: number;
-    password: string;
-}
+  id?: number;
+  email: string;
+  password: string;
+  cardNumber: string;
+  expirementDate: string;
+  securityCode: string;
+};
 
 export class User {
-    id?: number;
-    name: string;
-    email: string;
-    phone: number;
-    password: string;
+  id?: number;
+  email: string;
+  password: string;
+  cardNumber: string;
+  expirementDate: string;
+  securityCode: string;
 
-    constructor({ id, name, email, phone, password }: UserType) {
-        this.id = id || 0;
-        this.name = name || '';
-        this.email = email || '';
-        this.phone = phone || 0;
-        this.password = password || '';
-    }
+  constructor({
+                id,
+                email,
+                password,
+                cardNumber,
+                expirementDate,
+                securityCode
+              }: UserType) {
+    this.id = id || 0;
+    this.email = email || '';
+    this.password = password || '';
+    this.cardNumber = cardNumber || '';
+    this.expirementDate = expirementDate || '';
+    this.securityCode = securityCode || '';
+  }
 }

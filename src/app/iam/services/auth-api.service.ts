@@ -1,21 +1,41 @@
-import { HttpClient } from '@angular/common/http';
+import {HttpClient, HttpHeaders} from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 import { User } from '../models/user.entity';
+import {BehaviorSubject, Observable} from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthApiService {
   http = inject(HttpClient);
-  apiUrl = "https://tasklinker-fake-api.vercel.app/users"
+  signUpUrl = "https://tasklinker.azurewebsites.net/api/v1/authentication/sign-up";
+  signInUrl = "https://tasklinker.azurewebsites.net/api/v1/authentication/sign-in";
 
-  constructor() { }
+  constructor() {}
 
-  login(email: string, password: string) {
-    return this.http.get(`${this.apiUrl}?email=${email}&password=${password}`, { observe: 'response' });
+  login(email: string, password: string): Observable<any> {
+    return this.http.post<any>(this.signInUrl, { email, password });
   }
 
-  register(user: User) {
-    return this.http.post(this.apiUrl, user);
+  register(user: User): Observable<any> {
+    return this.http.post<any>(this.signUpUrl, {
+      email: user.email,
+      password: user.password,
+      cardNumber: user.cardNumber,
+      expirementDate: user.expirementDate,
+      securityCode: user.securityCode
+    });
+  }
+
+  saveToken(token: string): void {
+    localStorage.setItem('authToken', token);
+  }
+
+  getToken(): string | null {
+    return localStorage.getItem('authToken');
+  }
+
+  removeToken(): void {
+    localStorage.removeItem('authToken');
   }
 }
