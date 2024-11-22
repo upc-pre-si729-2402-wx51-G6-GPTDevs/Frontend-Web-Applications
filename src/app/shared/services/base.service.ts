@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class BaseService {
-  protected baseUrl = 'http://localhost:8080/api/v1';
+  protected baseUrl = 'https://tasklinker.azurewebsites.net/api/v1';
   protected baseUrlDashboard = 'https://tasklinker-fake-api.vercel.app';
 
 
